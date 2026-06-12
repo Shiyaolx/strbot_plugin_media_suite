@@ -1,0 +1,49 @@
+{
+  "default_api": {
+    "description": "图片来源 API。lolicon=Lolicon API(支持标签搜索), anosu=Anosu随机图, dmoe=樱花/二次元随机图",
+    "type": "string",
+    "options": ["lolicon", "anosu", "dmoe"],
+    "default": "lolicon",
+    "hint": "推荐 lolicon，支持关键词/标签搜索"
+  },
+  "enable_r18": {
+    "description": "是否允许 R18 内容(仅 lolicon 支持)。开启需自行承担风险，建议仅在私聊或特定群启用",
+    "type": "bool",
+    "default": false
+  },
+  "r18_whitelist_groups": {
+    "description": "允许 R18 的群号白名单(仅当 enable_r18 开启时生效)。留空则所有会话都可触发",
+    "type": "list",
+    "default": []
+  },
+  "command_name": {
+    "description": "提示：触发指令固定为「涩图」及别名 setu/二次元/来张图，此项保留兼容暂不生效",
+    "type": "string",
+    "default": "涩图"
+  },
+  "daily_limit": {
+    "description": "每个用户每天最大获取次数，0 表示不限制",
+    "type": "int",
+    "default": 0
+  },
+  "cooldown_seconds": {
+    "description": "同一用户两次请求之间的冷却时间(秒)，0 表示无冷却",
+    "type": "int",
+    "default": 3
+  },
+  "show_info": {
+    "description": "是否在图片下方附带作品信息(标题/作者/PID)",
+    "type": "bool",
+    "default": true
+  },
+  "request_timeout": {
+    "description": "请求 API 的超时时间(秒)",
+    "type": "int",
+    "default": 30
+  },
+  "proxy": {
+    "description": "图片反代地址前缀，用于替换 i.pixiv.re 等被墙域名。留空使用 API 默认",
+    "type": "string",
+    "default": ""
+  }
+}
