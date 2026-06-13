@@ -1,4 +1,4 @@
-# astrbot_plugin_anime_pic
+# AstrBot二次元图片插件
 
 AstrBot 二次元图片插件 —— 通过指令随机获取二次元图片，支持标签/关键词搜索、多图源切换、冷却与每日限流、R18 权限控制。
 
