@@ -1,8 +1,0 @@
-name: astrbot_plugin_anime_pic
-display_name: 二次元图片
-desc: 二次元图片插件 - 通过指令随机获取二次元图片，支持标签搜索
-version: v1.0.0
-author: Shiyao
-repo: https://github.com/Shiyaolx/astrbot_plugin_anime_pic
-support_platforms:
-  - aiocqhttp
