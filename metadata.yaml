@@ -1,0 +1,8 @@
+name: astrbot_plugin_media_suite
+display_name: 二次元聚合插件
+desc: 合并壁纸、二次元图片、表情包、番剧搜索/放送表、漫画搜索、以图搜番/搜图、一言和 Galgame 聚合搜索的 AstrBot 插件。
+version: 1.6.0
+author: Shiyao
+repo: https://github.com/Shiyaolx/strbot_plugin_media_suite
+support_platforms:
+  - aiocqhttp

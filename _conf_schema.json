@@ -1,0 +1,178 @@
+{
+  "wallpaper_timeout": {
+    "description": "壁纸图源请求超时（秒）",
+    "type": "int",
+    "default": 20
+  },
+  "wallpaper_proxy": {
+    "description": "壁纸图源代理（可选）",
+    "type": "string",
+    "default": ""
+  },
+  "default_api": {
+    "description": "二次元图片来源 API",
+    "type": "string",
+    "options": ["lolicon", "anosu", "dmoe"],
+    "default": "lolicon"
+  },
+  "enable_r18": {
+    "description": "是否允许 R18 内容",
+    "type": "bool",
+    "default": false
+  },
+  "r18_whitelist_groups": {
+    "description": "允许 R18 的群号白名单",
+    "type": "list",
+    "default": []
+  },
+  "daily_limit": {
+    "description": "每个用户每天最大获取次数，0 表示不限制",
+    "type": "int",
+    "default": 0
+  },
+  "cooldown_seconds": {
+    "description": "同一用户两次请求之间的冷却时间（秒）",
+    "type": "int",
+    "default": 3
+  },
+  "show_info": {
+    "description": "是否在图片下方附带作品信息",
+    "type": "bool",
+    "default": true
+  },
+  "request_timeout": {
+    "description": "二次元图片 API 请求超时时间（秒）",
+    "type": "int",
+    "default": 30
+  },
+  "anime_proxy": {
+    "description": "二次元图片反代地址前缀",
+    "type": "string",
+    "default": ""
+  },
+  "result_limit": {
+    "description": "每个来源最多返回的结果数量",
+    "type": "int",
+    "default": 3
+  },
+  "aggregate_result_limit": {
+    "description": "聚合搜索最多展示的总结果数量",
+    "type": "int",
+    "default": 2
+  },
+  "intro_max_length": {
+    "description": "作品简介最大长度",
+    "type": "int",
+    "default": 160
+  },
+  "timeout_seconds": {
+    "description": "Galgame 搜索请求超时时间",
+    "type": "float",
+    "default": 8
+  },
+  "search_kun_topics": {
+    "description": "是否同时搜索鲲论坛话题",
+    "type": "bool",
+    "default": true
+  },
+  "moegirl_api_url": {
+    "description": "萌娘百科 API 地址",
+    "type": "string",
+    "default": "https://moegirl.icu/api.php"
+  },
+  "moegirl_page_url": {
+    "description": "萌娘百科页面地址",
+    "type": "string",
+    "default": "https://moegirl.icu"
+  },
+  "kungal_api_base": {
+    "description": "鲲论坛 API 基础地址",
+    "type": "string",
+    "default": "https://www.kungal.com/api"
+  },
+  "kungal_site_url": {
+    "description": "鲲论坛站点地址",
+    "type": "string",
+    "default": "https://www.kungal.com"
+  },
+  "bili_search_api": {
+    "description": "番剧搜索 API（Bilibili，国内可直连）",
+    "type": "string",
+    "default": "https://api.bilibili.com/x/web-interface/search/type"
+  },
+  "bili_timeline_api": {
+    "description": "番剧放送表 API（Bilibili）",
+    "type": "string",
+    "default": "https://api.bilibili.com/pgc/web/timeline"
+  },
+  "bangumi_result_limit": {
+    "description": "番剧搜索最多返回的结果数量",
+    "type": "int",
+    "default": 3
+  },
+  "bangumi_calendar_limit": {
+    "description": "放送表最多展示的番剧数量",
+    "type": "int",
+    "default": 12
+  },
+  "bangumi_show_cover": {
+    "description": "番剧搜索是否附带封面图",
+    "type": "bool",
+    "default": true
+  },
+  "trace_api_url": {
+    "description": "以图搜番（trace.moe）API 地址",
+    "type": "string",
+    "default": "https://api.trace.moe/search"
+  },
+  "trace_anilist_chat": {
+    "description": "trace.moe 是否附带 AniList 元数据（番名等）",
+    "type": "bool",
+    "default": true
+  },
+  "trace_min_similarity": {
+    "description": "以图搜番低于该相似度（0~1）时标注结果可能不准",
+    "type": "float",
+    "default": 0.85
+  },
+  "saucenao_api_url": {
+    "description": "以图搜图（SauceNAO）API 地址",
+    "type": "string",
+    "default": "https://saucenao.com/search.php"
+  },
+  "saucenao_api_key": {
+    "description": "SauceNAO API Key（可选，填写后提升查询配额）",
+    "type": "string",
+    "default": ""
+  },
+  "saucenao_result_limit": {
+    "description": "以图搜图最多返回的结果数量",
+    "type": "int",
+    "default": 3
+  },
+  "saucenao_min_similarity": {
+    "description": "以图搜图过滤的最低相似度（0~100）",
+    "type": "float",
+    "default": 50
+  },
+  "image_search_timeout": {
+    "description": "以图搜索时等待用户补发图片的超时时间（秒）",
+    "type": "int",
+    "default": 60
+  },
+  "hitokoto_api_url": {
+    "description": "二次元一言（hitokoto）API 地址",
+    "type": "string",
+    "default": "https://v1.hitokoto.cn"
+  },
+  "hitokoto_default_type": {
+    "description": "一言默认类型代码（留空为全部）：a动画 b漫画 c游戏 d文学 e原创 f网络 g其他 h影视 i诗词 j网易云 k哲学 l抖机灵",
+    "type": "string",
+    "default": ""
+  },
+  "hitokoto_show_source": {
+    "description": "一言是否附带出处（作者/作品）",
+    "type": "bool",
+    "default": true
+  }
+}
