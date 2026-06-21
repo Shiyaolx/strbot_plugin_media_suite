@@ -1,4 +1,4 @@
-# 🎨 图文聚合插件
+# 🎨 二次元聚合插件
 
 [![Version](https://img.shields.io/badge/version-1.6.0-blue.svg)](https://github.com/yourusername/astrbot_plugin_media_suite)
 [![AstrBot](https://img.shields.io/badge/AstrBot-插件-green.svg)](https://github.com/Soulter/AstrBot)
